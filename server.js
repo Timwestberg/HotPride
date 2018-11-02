@@ -1,3 +1,4 @@
+
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
@@ -45,6 +46,29 @@ var reservations =[
     }, 
 ]
 
+// Routes
+//=================================================================================
+app.get("/", function(req, res){
+    res.sendFile(path.join(__dirname, "home.html"));
+})
+ 
+app.get("/view", function(req, res) {
+    res.sendFile(path.join(__dirname, "view.html"));
+  });
+
+  app.get("/make", function(req, res) {
+    res.sendFile(path.join(__dirname, "make.html"));
+  });
+
+  app.get("/api/view", function(req, res) {
+    return res.json(reservations);
+  });
+  
+  app.get("/api/make", function(req, res) {
+    return res.json(reservations);
+  });
+  
+
 //Create New Reservations
 
 app.post("/api/reservations", function(req, res){
@@ -53,3 +77,7 @@ app.post("/api/reservations", function(req, res){
     reservations.push(newreservations);
     res.json(newreservations);
 });
+
+app.listen(PORT, function() {
+    console.log("App listening on PORT " + PORT);
+  });
