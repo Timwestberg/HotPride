@@ -46,6 +46,33 @@ var reservations =[
     }, 
 ]
 
+var waitlist = [
+    {
+        name:"Tiny",
+        phoneNumber:"555-356-8484",
+        email:"testing@email.com",
+        uniqueId: "01010"
+    },
+    {
+        name:"Stormy",
+        phoneNumber:"555-346-8444",
+        email:"testing1@email.com",
+        uniqueId: "39383"
+    },
+    {
+        name:"Tommy",
+        phoneNumber:"555-743-8980",
+        email:"testing3@email.com",
+        uniqueId: "77773"
+    },
+    {
+        name:"Paulie",
+        phoneNumber:"555-884-4884",
+        email:"testing2@email.com",
+        uniqueId: "85573"
+    },
+]
+
 // Routes
 //=================================================================================
 app.get("/", function(req, res){
@@ -61,7 +88,7 @@ app.get("/view", function(req, res) {
   });
 
   app.get("/api/view", function(req, res) {
-    return res.json(reservations);
+    return res.json(waitlist);
   });
   
   app.get("/api/make", function(req, res) {
