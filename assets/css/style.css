@@ -1,1 +1,24 @@
 @import url('https://fonts.googleapis.com/css?family=Amaranth%7CCabin+Sketch%7CIstok+Web');
+
+html {
+    font-family: 'Istok Web', sans-serif;
+    font-family: 'Amaranth', sans-serif;
+    font-family: 'Cabin Sketch', cursive;
+}
+
+.navi {
+    border-radius: 0px 0px 121px 128px;
+    -moz-border-radius: 0px 0px 121px 128px;
+    -webkit-border-radius: 0px 0px 121px 128px;
+    border: 0px solid #000000;
+}
+
+.button {
+    -webkit-box-shadow: 8px 9px 36px 7px rgba(0,0,0,0.69);
+    -moz-box-shadow: 8px 9px 36px 7px rgba(0,0,0,0.69);
+    box-shadow: 8px 9px 36px 7px rgba(0,0,0,0.69);
+    border-radius: 69px 69px 69px 69px;
+    -moz-border-radius: 69px 69px 69px 69px;
+    -webkit-border-radius: 69px 69px 69px 69px;
+    border: 3px solid #000000;
+}
