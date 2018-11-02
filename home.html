@@ -7,7 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome-font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Home Page</title>
@@ -15,23 +16,59 @@
 
 <body>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-12"></div>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Hot Pride </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="/">Hot Pride<span class="sr-only">(current)</span></a>
+                        </li>
+                    
+                      </ul>
+
+                    </div>
+                  </nav>
+    
+
+
     <header>
         <div class="jumbotron navi">
-            <h1 class="display-4">Hello, world!</h1>
+            <h1 class="display-4">Welcome to Hot Pride !</h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content
                 or information.</p>
             <hr class="my-4">
             <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button" class="button" >Learn more</a>
-            <a class="btn btn-primary btn-lg" href="#" class="button">Learn more</a>
+            <div class="row">
+                <div class="col-3">
+            <a class="btn btn-primary btn-lg" href="/api/make" role="button" id="button" >Make Reservation</a>
+        </div>
+
+                <div class="col-3">
+            <a class="btn btn-primary btn-lg" href="/api/view" role="button" id="button" >View Reservations</a>
+            
+            <div class="col-3">
+                    <a class="btn btn-primary btn-lg" href="/" role="button" id="button" ><i class="fas fa-home"></i></a>
+        </div>
+
+        </div>
 
         </div>
     </header>
 
+
+</div>
+
     <div class="apiLinks">
             <a href="">API Table Link</a>| <a href="#:">API Wait List</a>
         </div>
-
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

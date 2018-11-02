@@ -13,10 +13,13 @@ html {
     border: 0px solid #000000;
 }
 
-.button {
-    -webkit-box-shadow: 8px 9px 36px 7px rgba(0,0,0,0.69);
-    -moz-box-shadow: 8px 9px 36px 7px rgba(0,0,0,0.69);
-    box-shadow: 8px 9px 36px 7px rgba(0,0,0,0.69);
+#button {
+    color:#4f3a10;
+    background-color:#ffc34c;
+    margin-top: 10px;
+    -webkit-box-shadow: 4px 18px 48px -2px rgba(0,0,0,0.58);
+    -moz-box-shadow: 4px 18px 48px -2px rgba(0,0,0,0.58);
+    box-shadow: 4px 18px 48px -2px rgba(0,0,0,0.58);
     border-radius: 69px 69px 69px 69px;
     -moz-border-radius: 69px 69px 69px 69px;
     -webkit-border-radius: 69px 69px 69px 69px;
